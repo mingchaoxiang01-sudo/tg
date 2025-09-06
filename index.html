@@ -15,33 +15,44 @@
       align-items: center;
       text-align: center;
       flex-direction: column;
+      padding: 20px;
     }
-    h1 { color: #ff3366; margin-bottom: 10px; }
-    p { font-size: 16px; margin-bottom: 30px; }
-    a {
+    h1 { color: #ff3366; margin-bottom: 10px; opacity: 0; animation: fadeIn 1s forwards; }
+    p { font-size: 16px; margin-bottom: 30px; opacity: 0; animation: fadeIn 2s forwards; }
+    button {
       display: block;
       margin: 10px auto;
       padding: 12px 0;
       width: 250px;
       background: #ff3366;
       color: #fff;
-      text-decoration: none;
+      border: none;
       border-radius: 8px;
       font-size: 16px;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeIn 3s forwards;
     }
-    a:hover { background: #ff6699; }
+    button:hover { background: #ff6699; }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
   </style>
 </head>
 <body>
+
   <h1>🔥 性感女神俱乐部 / Sexy Goddess Club</h1>
-  <p>每日更新，免费 + VIP 福利 / Daily updates, Free + VIP perks</p>
+  <p>每日更新福利内容！点击下面按钮加入我们的 TG 免费群或升级 VIP。<br>
+     Daily perks updated daily! Click below to join our TG Free Group or upgrade VIP.</p>
 
-  <!-- 直接加入免费群 -->
-  <a href="https://t.me/SecretGirlsClub1" target="_blank">加入 TG 免费群 / Join TG Free Group</a>
+  <button onclick="window.location.href='https://t.me/SecretGirlsClub1'" >
+    加入 TG 免费群 / Join TG Free Group
+  </button>
 
-  <!-- 联系管理员加入 VIP -->
-  <a href="https://t.me/Angel_Secrets_VIP" target="_blank">升级 VIP / Upgrade VIP</a>
+  <button onclick="window.location.href='https://t.me/Angel_Secrets_VIP'" >
+    升级 VIP / Upgrade VIP
+  </button>
+
 </body>
 </html>
-
-
